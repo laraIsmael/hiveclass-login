@@ -31,7 +31,7 @@ export default function Login() {
         </div>
           <button className='w-full h-full flex justify-center cursor-pointer py-5'>
             Forgot your
-            <p className='text-yellow-500'>&nbsp;password</p>
+            <p className='text-yellow-500'>&nbsp;&nbsp;password</p>
             ?
           </button>
       </div>  
