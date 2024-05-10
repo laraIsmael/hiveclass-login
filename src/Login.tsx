@@ -22,7 +22,10 @@ export default function Login({ handleShowButton }) {
             LOGIN
           </button>
         </div>
-        <button className="button-full-container">
+        <button
+          className="button-full-container"
+          onClick={() => alert("coming soon")}
+        >
           Forgot your
           <p className="text-yellow-500">&nbsp;&nbsp;password</p>?
         </button>

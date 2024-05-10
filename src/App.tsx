@@ -4,11 +4,11 @@ import Login from "./Login";
 import LoginClickFail from "./LoginClickFail";
 
 function App() {
-  const [showButton, toggleButton] = useState<boolean>(true);
+  const [showButton, toggleButton] = useState<boolean>(false);
 
   const handleShowButton = () => {
     toggleButton(true);
-    setTimeout(() => toggleButton(true), 4000);
+    setTimeout(() => toggleButton(false), 4000);
   };
 
   return (
