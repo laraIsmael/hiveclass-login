@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header({ showButton }) {
   return (
     <div className="navbar">
       <a href="/#">
@@ -10,6 +10,11 @@ function Header() {
           className="hover:brightness-90"
         />
       </a>
+      {showButton && (
+        <button className="button-hiveclass max-w-fit">
+          Enter email and password
+        </button>
+      )}
     </div>
   );
 }

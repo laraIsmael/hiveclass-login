@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Login from "./Login";
-import LoginClickFail from "./LoginClickFail";
 
 function App() {
-  const [showButton, toggleButton] = useState<boolean>(false);
+  const [showButton, toggleButton] = useState<boolean>(true);
 
   const handleShowButton = () => {
     toggleButton(true);
-    setTimeout(() => toggleButton(false), 4000);
+    setTimeout(() => toggleButton(true), 4000);
   };
 
   return (
     <div>
-      {showButton && <LoginClickFail />}
-      <Header />
+      <Header showButton={showButton} />
       <Login handleShowButton={handleShowButton} />
     </div>
   );
