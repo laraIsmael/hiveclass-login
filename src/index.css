@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 
+/* HEADER */
+.navbar {
+  @apply sticky flex justify-between items-center top-0 z-20 bg-white p-3  shadow-md
+}
+
+
+/* LOGIN */
+.position-center {
+  @apply flex flex-col justify-center items-center
+}
+
+.card {
+  @apply mx-2 w-96 border shadow rounded-lg bg-[#FCFCFC]
+}
+
+.button-hiveclass {
+  @apply items-center w-full rounded p-2 bg-[#f6c344] text-sm font-bold text-gray-600 m-4 cursor-pointer hover:border-gray-300 hover:bg-yellow-500
+}
+
+.button-full-container {
+  @apply w-full h-full flex justify-center cursor-pointer py-5
+}
+
+
 .login-input-box {
   @apply my-3 w-full
 }
