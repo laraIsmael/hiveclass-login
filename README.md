@@ -1,3 +1,5 @@
 # TypeScript + React + Vite + Tailwind
 
-Hiveclass Login 
+To run locally:
+~ npm install
+~ npm run dev
