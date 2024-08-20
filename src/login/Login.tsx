@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Login({ handleShowButton }) {
   return (
@@ -30,6 +31,11 @@ export default function Login({ handleShowButton }) {
           <p className="text-yellow-500">&nbsp;&nbsp;password</p>?
         </button>
       </div>
-    </div>
+        <button className="button-hiveclass max-w-fit">
+          <Link to="Graph">
+            Show Graph        
+          </Link>
+        </button>
+      </div>
   );
 }
